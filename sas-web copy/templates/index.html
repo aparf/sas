@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Prediction service</title>
+	<meta charset="utf-8">
+	<meta description="boilerplate code">
+	<meta keywords="boilerplate, test">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+</head>
+<div class = "flex-container">
+	
+<div class = "a">
+<body>
+<h3>Income Prediction Form</h3>
+<form action="/result" method="POST">
+	<!-- ID input -->
+	<label for="ID">ID</label>
+	<input type="text" id="ID" name="ID">
+
+	<br>
+
+	<!-- Age input -->
+	<label for="age">Age</label>
+	<input type="text" id="ID" name="ID">
+	<br>
+
+	<!-- Independent Household -->
+	<label for="ind_household">Independent Household</label>
+	<select id="ind_household" name="ind_household">
+	<option value="0">No</option>
+	<option value="1">Yes</option>
+	</select>
+	<br>
+	<!-- Age group -->
+	<label for="age_group">Age group</label>
+	<select id="age_group" name="age_group">
+	<option value="2">young</option>
+	<option value="0">middle</option>
+	<option value="1">senior</option>
+	</select>
+	<br>
+	<!-- District -->
+	<label for="distrcit">District</label>
+	<input type="text" id="distrcit" name="distrcit">
+	<br>
+	<!-- Region -->
+	<label for="region">Region</label>
+	<select id="region" name="region">
+	<option value="3">South East</option>
+	<option value="0">Midlands</option>
+	<option value="1">North</option>
+	<option value="2">Scottish</option>
+	<option value="4">South West</option>
+	<option value="5">Unknown</option>
+	</select>
+	<br>
+	<!-- Lifetime -->
+	<label for="lifetime">Lifetime</label>
+	<input type="text" id="lifetime" name="lifetime">
+	<br>
+	<!-- Income -->
+	<label for="income">Income</label>
+	<input type="text" id="income" name="income">
+	<br>
+	<!-- Segment -->
+	<label for="Segment">Segment</label>
+	<select id="Segment" name="Segment">
+	<option value="2">Silver</option>
+	<option value="3">Tin</option>
+	<option value="0">Gold</option>
+	<option value="1">Platinum</option>
+	</select>
+	<br>
+	<!-- Independent deposit -->
+	<label for="ind_deposit">Independent deposit</label>
+	<select id="ind_deposit" name="ind_deposit">
+	<option value="0">No</option>
+	<option value="1">Yes</option>
+	</select>
+	<br>
+	<!-- Independent email -->
+	<label for="ind_email">Independent email</label>
+	<select id="ind_email" name="ind_email">
+	<option value="0">No</option>
+	<option value="1">Yes</option>
+	</select>
+	<br>
+	<!-- Independent phone -->
+	<label for="ind_phone">Independent phone</label>
+	<select id="ind_phone" name="ind_phone">
+	<option value="0">No</option>
+	<option value="1">Yes</option>
+	</select>
+	<br>
+	<!-- Independent salary -->
+	<label for="ind_salary">Independent salary</label>
+	<select id="ind_salary" name="ind_salary">
+	<option value="0">No</option>
+	<option value="1">Yes</option>
+	</select>
+	<br>
+	<!-- Transactions 6 month -->
+	<label for="trans_6_month">Transactions 6 month</label>
+	<input type="text" id="trans_6_month" name="trans_6_month">
+	<br>
+	<!-- Transactions 9 month -->
+	<label for="trans_9_month">Transactions 9 month</label>
+	<input type="text" id="trans_9_month" name="trans_9_month">
+	<br>
+	<!-- Transactions 12 month -->
+	<label for="trans_12_month">Transactions 12 month</label>
+	<input type="text" id="trans_12_month" name="trans_12_month">
+	<br>
+	<!-- amont_tans -->
+	<label for="amont_tans">Amount of transactions</label>
+	<input type="text" id="amont_tans" name="amont_tans">
+	<br>
+	<!-- amont_day_from -->
+	<label for="amont_day_from">Amount of days</label>
+	<input type="text" id="amont_day_from" name="amont_day_from">
+	<br>
+	<!-- Transactions 12 month -->
+	<label for="trans_3_month">Transactions 3 month</label>
+	<input type="text" id="trans_3_month" name="trans_3_month">
+	<br>
+	<!-- Gender -->
+	<label for="gender">Gender </label>
+	<select id="gender" name="gender">
+	<option value="0">F</option>
+	<option value="1">M</option>
+	<option value="2">U</option>
+	</select>
+	<br>
+	<div class="buttons">
+	<input type ="submit" name="action" value="Model1">
+	<input type ="submit" name="action" value="Model2">
+	</div>
+</form>
+</div>
+</div>
+</body>
+</html>
+
